@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#$1 = printer name (e.g. sf1013a, sf1013b, sf1013c)
+#$2 = file name
+
+lpr -P $1 -o PageSize=Letter -o PageRegion=Letter -o Duplex=DuplexNoTumble -o Resolution=1200x1200dpi $2
